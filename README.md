@@ -1,1 +1,1 @@
-# coding-project-template
+# TIENDA ELECTRONICA DE PLANTAS-PROYECTO  DE PRUEBA

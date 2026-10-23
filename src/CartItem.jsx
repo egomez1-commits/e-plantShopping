@@ -19,7 +19,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   const handleContinueShopping = (e) => {
     e.preventDefault();
-    onContinueShopping();
+    onContinueShopping(e);
   };
 
   const handleIncrement = (item) => {
@@ -69,7 +69,8 @@ const CartItem = ({ onContinueShopping }) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={(e) => handleContinueShopping(e)}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button className="get-started-button1" onClick={() => alert(`El total es: $${calculateTotalAmount()}`)}>
+         Checkout </button>
       </div>
     </div>
   );
